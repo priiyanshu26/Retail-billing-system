@@ -1,8 +1,3 @@
-//package com.retail.auth.security;
-//
-//public class CustomUserDetailsService {
-//
-//}
 package com.retail.auth.security;
 
 import com.retail.auth.entity.User;
@@ -35,7 +30,7 @@ public class CustomUserDetailsService implements UserDetailsService {
 
         return new org.springframework.security.core.userdetails.User(
                 user.getUsername(),
-                user.getPassword(),          // encoded password
+                user.getPassword(),         
                 user.isEnabled(),
                 true,
                 true,
