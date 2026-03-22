@@ -1,0 +1,296 @@
+/* BillSummary Component Styles - Modern Design System */
+
+.bill-summary-container {
+  max-width: 900px;
+  margin: 0 auto;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  overflow: hidden;
+}
+
+/* Main Title */
+.bill-summary-container > h3 {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.75rem;
+  font-weight: 800;
+  color: #1a1a1a;
+  margin: 0;
+  padding: 2rem 2rem 1rem;
+  letter-spacing: -0.02em;
+}
+
+/* Customer and Order Info */
+.bill-summary-container > p {
+  font-family: "Inter", sans-serif;
+  font-size: 0.95rem;
+  font-weight: 500;
+  color: #555;
+  padding: 0.5rem 2rem;
+  margin: 0;
+}
+
+.bill-summary-container > p strong {
+  font-weight: 600;
+  color: #1a1a1a;
+}
+
+/* Table Styling */
+.bill-summary-container > table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1.5rem 0;
+}
+
+.bill-summary-container > table thead {
+  background: linear-gradient(135deg, #667eea 0%, #5f6bdf 100%);
+  border-bottom: 2px solid #667eea;
+}
+
+.bill-summary-container > table th {
+  padding: 1rem 2rem;
+  text-align: left;
+  font-family: "Poppins", sans-serif;
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: white;
+  letter-spacing: -0.01em;
+}
+
+.bill-summary-container > table th:last-child {
+  text-align: right;
+}
+
+.bill-summary-container > table tbody tr {
+  border-bottom: 1px solid #f0f0f0;
+  transition: background-color 0.2s ease;
+}
+
+.bill-summary-container > table tbody tr:hover {
+  background-color: #f8f8fa;
+}
+
+.bill-summary-container > table td {
+  padding: 1rem 2rem;
+  font-family: "Inter", sans-serif;
+  font-size: 0.95rem;
+  font-weight: 500;
+  color: #333;
+}
+
+.bill-summary-container > table td:nth-child(2),
+.bill-summary-container > table td:nth-child(3),
+.bill-summary-container > table td:nth-child(4) {
+  text-align: right;
+}
+
+.bill-summary-container > table td:nth-child(3),
+.bill-summary-container > table td:nth-child(4) {
+  color: #667eea;
+  font-weight: 600;
+}
+
+/* Total Amount */
+.bill-summary-container > h4 {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #1a1a1a;
+  padding: 1.5rem 2rem 0;
+  margin: 0;
+  letter-spacing: -0.01em;
+}
+
+.bill-summary-container > h4 {
+  background: linear-gradient(135deg, rgba(102, 126, 234, 0.08) 0%, rgba(95, 107, 223, 0.05) 100%);
+  padding: 1.5rem 2rem;
+  margin: 1.5rem 0 0;
+  border-radius: 8px;
+}
+
+/* Action Buttons */
+.bill-summary-container > button {
+  font-family: "Poppins", sans-serif;
+  padding: 0.75rem 1.75rem;
+  margin: 1.5rem 2rem;
+  border: none;
+  border-radius: 8px;
+  font-size: 0.95rem;
+  font-weight: 700;
+  cursor: pointer;
+  background: linear-gradient(135deg, #667eea 0%, #5f6bdf 100%);
+  color: white;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 8px rgba(102, 126, 234, 0.3);
+  letter-spacing: -0.01em;
+}
+
+.bill-summary-container > button:hover:not(:disabled) {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(102, 126, 234, 0.4);
+}
+
+.bill-summary-container > button:disabled {
+  background: #ccc;
+  cursor: not-allowed;
+  box-shadow: none;
+  transform: none;
+}
+
+/* Payment Info Section */
+.bill-summary-container > div {
+  padding: 0 2rem;
+  margin-top: 1.5rem;
+}
+
+.bill-summary-container > div > h4 {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #1a1a1a;
+  margin: 1rem 0 1rem;
+  letter-spacing: -0.01em;
+}
+
+.bill-summary-container > div > p {
+  font-family: "Inter", sans-serif;
+  font-size: 0.95rem;
+  font-weight: 500;
+  margin: 0.75rem 0;
+}
+
+.bill-summary-container > div > button {
+  width: 100%;
+  font-family: "Poppins", sans-serif;
+  padding: 0.875rem 1.75rem;
+  margin: 1rem 0 0;
+  border: none;
+  border-radius: 8px;
+  font-size: 0.95rem;
+  font-weight: 700;
+  cursor: pointer;
+  background: linear-gradient(135deg, #667eea 0%, #5f6bdf 100%);
+  color: white;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 8px rgba(102, 126, 234, 0.3);
+  letter-spacing: -0.01em;
+}
+
+.bill-summary-container > div > button:hover:not(:disabled) {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(102, 126, 234, 0.4);
+}
+
+.bill-summary-container > div > button:disabled {
+  background: #ccc;
+  cursor: not-allowed;
+  box-shadow: none;
+  transform: none;
+}
+
+/* Success Messages */
+.bill-summary-container > p[style*="color: green"],
+.bill-summary-container > div > p[style*="color: blue"] {
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
+  padding: 0.75rem 1rem;
+  border-radius: 8px;
+  background: linear-gradient(135deg, rgba(76, 175, 80, 0.08) 0%, rgba(76, 175, 80, 0.05) 100%);
+  color: #2e7d32 !important;
+}
+
+.bill-summary-container > div > p[style*="color: blue"] {
+  background: linear-gradient(135deg, rgba(102, 126, 234, 0.08) 0%, rgba(95, 107, 223, 0.05) 100%);
+  color: #667eea !important;
+}
+
+/* Error Messages */
+.bill-summary-container > div > p[style*="color: red"] {
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
+  padding: 0.75rem 1rem;
+  border-radius: 8px;
+  background: linear-gradient(135deg, rgba(211, 47, 47, 0.08) 0%, rgba(211, 47, 47, 0.05) 100%);
+  color: #d32f2f !important;
+}
+
+/* Print Styles */
+@media print {
+  .bill-summary-container {
+    box-shadow: none;
+    max-width: 100%;
+  }
+
+  .bill-summary-container > button {
+    display: none !important;
+  }
+
+  body {
+    margin: 0;
+    padding: 0;
+  }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .bill-summary-container {
+    border-radius: 0;
+  }
+
+  .bill-summary-container > h3 {
+    padding: 1.5rem 1rem 0.75rem;
+  }
+
+  .bill-summary-container > p {
+    padding: 0.5rem 1rem;
+  }
+
+  .bill-summary-container > table th,
+  .bill-summary-container > table td {
+    padding: 0.75rem 1rem;
+    font-size: 0.85rem;
+  }
+
+  .items-table th,
+  .items-table td {
+    padding: 0.75rem;
+  }
+
+  .bill-actions {
+    flex-direction: column;
+  }
+
+  .action-btn {
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .bill-header h1 {
+    font-size: 1.25rem;
+  }
+
+  .bill-content {
+    padding: 1rem;
+  }
+
+  .bill-meta,
+  .customer-info,
+  .terms-section {
+    padding: 1rem;
+  }
+
+  .items-table th,
+  .items-table td {
+    padding: 0.5rem;
+    font-size: 0.85rem;
+  }
+
+  .company-info h2 {
+    font-size: 1.25rem;
+  }
+
+  .company-info p {
+    font-size: 0.85rem;
+  }
+}
